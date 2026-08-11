@@ -21,7 +21,7 @@ The current development platform uses a **simulated industrial chiller** to demo
 
 ## What can DTComm do?
 
-DTComm currently demonstrates:
+DTComm to demonstrates:
 
 * Real-time equipment data monitoring
 * Live sensor values
@@ -116,7 +116,7 @@ The current development system consists of:
 
 ↓
 
-**Live Sensor Data**
+**Live Sensor Data** (simulated)
 
 ↓
 
@@ -185,6 +185,17 @@ The goal is simple:
 * Digital twin integration
 * Advanced equipment models
 * Industrial deployment testing
+
+## Industrial Cybersecurity
+
+The long-term security direction is intended to align with the **IEC 62443 family of standards**, for cybersecurity in industrial automation and control systems.
+
+Security is being considered alongside the development of:
+
+* Equipment communication
+* Application interaction
+
+> **DTComm is not to be IEC 62443 compliant or certified but rather to aim as to be close as to the security practices or standard in minimize bad actor threat towards the communication pipeline in industrial automation.
 
 ---
 
