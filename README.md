@@ -125,16 +125,7 @@ The current development system consists of:
 The demonstration is intentionally built around an industrial equipment scenario rather than a generic messaging example.
 
 ---
-## Screenshots
-1) Server to client interaction
-   <img width="1919" height="1048" alt="dtcomm1" src="https://github.com/user-attachments/assets/6978cd2a-bd78-4fab-97cc-09f4ec5c34f7" />
 
-2) Subscription
-   <img width="1919" height="1062" alt="dtcomm_sub" src="https://github.com/user-attachments/assets/090977c8-013c-4a55-b73a-5311be2411dc" />
-
-
-
----
 ## Performance Goals
 
 DTComm is being developed with the following targets:
@@ -182,7 +173,14 @@ The intention is to make **security part of the communication platform from the 
 
 ## Demonstration
 
-Screenshots and demonstration videos will be added as development progresses.
+## Screenshots
+1) Server to client interaction
+   <img width="1919" height="1048" alt="dtcomm1" src="https://github.com/user-attachments/assets/6978cd2a-bd78-4fab-97cc-09f4ec5c34f7" />
+
+2) Subscription
+   <img width="1919" height="1062" alt="dtcomm_sub" src="https://github.com/user-attachments/assets/090977c8-013c-4a55-b73a-5311be2411dc" />
+
+
 
 The project is being developed using an industrial chiller as the primary demonstration platform.
 
