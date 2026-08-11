@@ -125,7 +125,12 @@ The current development system consists of:
 The demonstration is intentionally built around an industrial equipment scenario rather than a generic messaging example.
 
 ---
+## Screenshots
+1) Server to client interaction
+   <img width="1919" height="1048" alt="dtcomm1" src="https://github.com/user-attachments/assets/6978cd2a-bd78-4fab-97cc-09f4ec5c34f7" />
 
+
+---
 ## Performance Goals
 
 DTComm is being developed with the following targets:
