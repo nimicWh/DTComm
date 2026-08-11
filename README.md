@@ -11,9 +11,13 @@
 <img src="https://img.shields.io/badge/Simulation-Physics%20Based-orange" />
 </p>
 
-DTComm is a lightweight communication platform being developed for industrial equipment monitoring, real-time data acquisition and digital twin applications.
+**DTComm** is an industrial communication platform being developed for **real-time equipment monitoring, industrial digitalisation and digital twin applications**.
 
-It is designed to connect industrial equipment and simulated equipment models to monitoring applications while keeping communication lightweight, responsive and scalable.
+From the beginning of the project, DTComm with the intention of evolving toward an architecture **aligned with IEC 62443 industrial cybersecurity principles**.
+
+The current development platform uses a **simulated industrial chiller** to demonstrate live equipment communication and monitoring.
+
+> **Connect equipment. Move data. Enable smarter and more secure industrial applications.**
 
 **DTComm is currently under active development.**
 
