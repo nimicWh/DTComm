@@ -188,14 +188,21 @@ The goal is simple:
 
 ## Industrial Cybersecurity
 
-The long-term security direction is intended to align with the **IEC 62443 family of standards**, for cybersecurity in industrial automation and control systems.
+The long-term security direction of DTComm is intended to align with the **IEC 62443 family of standards**, which provides a framework for cybersecurity in industrial automation and control systems.
 
 Security is being considered alongside the development of:
 
 * Equipment communication
 * Application interaction
+* Device and session management
+* Access control
+* Authentication and authorization
+* Protection of the communication pipeline
 
-> **DTComm is not to be IEC 62443 compliant or certified but rather to aim as to be close as to the security practices or standard in minimize bad actor threat towards the communication pipeline in industrial automation.
+DTComm is **not intended to claim IEC 62443 compliance or certification**. Instead, the project aims to adopt security practices and principles that are consistent with the IEC 62443 approach, with the objective of reducing the risk of unauthorized access, malicious activity and other threats to the communication pipeline within industrial automation environments.
+
+The intention is to make **security part of the communication platform from the beginning**, rather than treating cybersecurity as an additional layer after the communication system has been developed.
+
 
 ---
 
