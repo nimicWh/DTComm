@@ -189,6 +189,9 @@ The project is being developed using an industrial chiller as the primary demons
 ## Project Status
 
 **Active Development**
+On going
+1) Security on communication transmission.
+2) Provide communication interface or socket for MQTT, OPC UA, Modbus or other protocols.
 
 DTComm is currently a development and demonstration project.
 
