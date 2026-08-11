@@ -178,6 +178,10 @@ The intention is to make **security part of the communication platform from the 
 2) Subscription
    <img width="1919" height="1062" alt="dtcomm_sub" src="https://github.com/user-attachments/assets/090977c8-013c-4a55-b73a-5311be2411dc" />
 
+3) Connection example, 3 client connections, authenticated, acknowledged and subscribed.
+   <img width="1919" height="1062" alt="dtcomm_multi" src="https://github.com/user-attachments/assets/1b85e580-270c-425a-896d-736f6c3072ce" />
+
+
 
 
 The project is being developed using an industrial chiller as the primary demonstration platform.
