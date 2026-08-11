@@ -8,7 +8,6 @@
 
 <p align="center">
 <img src="https://img.shields.io/badge/Status-Active%20Development-success" />
-<img src="https://img.shields.io/badge/Simulation-Physics%20Based-orange" />
 </p>
 
 **DTComm** is an industrial communication platform being developed for **real-time equipment monitoring, industrial digitalisation and digital twin applications**.
@@ -17,9 +16,6 @@ From the beginning of the project, DTComm with the intention of evolving toward 
 
 The current development platform uses a **simulated industrial chiller** to demonstrate live equipment communication and monitoring.
 
-> **Connect equipment. Move data. Enable smarter and more secure industrial applications.**
-
-**DTComm is currently under active development.**
 
 ---
 
