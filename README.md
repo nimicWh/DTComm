@@ -151,37 +151,6 @@ DTComm explores a lightweight approach specifically for this type of environment
 
 ---
 
-## Development Roadmap
-
-### Current
-
-✓ Equipment simulation
-✓ Live sensor data
-✓ Client/server communication
-✓ Device sessions
-✓ Data subscriptions
-✓ Continuous telemetry
-✓ Real-time monitoring
-
-### Next
-
-* More industrial data points
-* Digital and analogue signals
-* Equipment status monitoring
-* Commands and control
-* Improved diagnostics
-* Connection recovery
-* Multi-device demonstrations
-* Physical equipment integration
-
-### Future
-
-* Industrial cybersecurity
-* Secure communication
-* Digital twin integration
-* Advanced equipment models
-* Industrial deployment testing
-
 ## Industrial Cybersecurity
 
 The long-term security direction of DTComm is intended to align with the **IEC 62443 family of standards**, which provides a framework for cybersecurity in industrial automation and control systems.
