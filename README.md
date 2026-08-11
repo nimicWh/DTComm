@@ -149,10 +149,6 @@ Many industrial applications require equipment data to move continuously between
 
 DTComm explores a lightweight approach specifically for this type of environment.
 
-The goal is simple:
-
-> **Connect equipment data to applications quickly, continuously and reliably.**
-
 ---
 
 ## Development Roadmap
