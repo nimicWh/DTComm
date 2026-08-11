@@ -2,6 +2,15 @@
 
 ### Industrial Communication for Real-Time Equipment Monitoring
 
+*Engineering Simulation • HVAC • Industrial Automation • Digital Twin • Industry 4.0*
+
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Status-Active%20Development-success" />
+<img src="https://img.shields.io/badge/Simulation-Physics%20Based-orange" />
+</p>
+
 DTComm is a lightweight communication platform being developed for industrial equipment monitoring, real-time data acquisition and digital twin applications.
 
 It is designed to connect industrial equipment and simulated equipment models to monitoring applications while keeping communication lightweight, responsive and scalable.
