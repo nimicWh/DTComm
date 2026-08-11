@@ -179,6 +179,7 @@ The intention is to make **security part of the communication platform from the 
    <img width="1919" height="1062" alt="dtcomm_sub" src="https://github.com/user-attachments/assets/090977c8-013c-4a55-b73a-5311be2411dc" />
 
 3) Connection example, 3 client connections, authenticated, acknowledged and subscribed.
+   Different timing startup for each client and connect to server. Server registered 3 connections individually.
    <img width="1919" height="1062" alt="dtcomm_multi" src="https://github.com/user-attachments/assets/1b85e580-270c-425a-896d-736f6c3072ce" />
 
 
