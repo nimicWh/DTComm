@@ -129,6 +129,10 @@ The demonstration is intentionally built around an industrial equipment scenario
 1) Server to client interaction
    <img width="1919" height="1048" alt="dtcomm1" src="https://github.com/user-attachments/assets/6978cd2a-bd78-4fab-97cc-09f4ec5c34f7" />
 
+2) Subscription
+   <img width="1919" height="1062" alt="dtcomm_sub" src="https://github.com/user-attachments/assets/090977c8-013c-4a55-b73a-5311be2411dc" />
+
+
 
 ---
 ## Performance Goals
