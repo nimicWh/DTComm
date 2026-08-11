@@ -145,9 +145,7 @@ These are development targets and test objectives, not certification claims.
 
 ## Why DTComm?
 
-Many industrial applications require equipment data to move continuously between machines, software applications, monitoring systems and digital models.
-
-DTComm explores a lightweight approach specifically for this type of environment.
+The DTComm is to be designed for the project, Physic based digital twin. IT explores a lightweight approach to the environment of communication.
 
 ---
 
