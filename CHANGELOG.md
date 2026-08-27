@@ -35,9 +35,11 @@ Added OPC UA communication capability to DTComm.
 
 
 
-## OPC UA Client 
-
-Implemented a DTComm OPC UA client test application.
+## OPC UA Client (server and client test program. The server uses above program)
+- Test with console. No GUI yet.
+- Certificates authorization between server and client.
+- All certificates loaded are for testing only
+- All data are simulated for testing now.
 
 
 
