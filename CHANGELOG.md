@@ -163,26 +163,6 @@ Testing demonstrated:
 * Individual client connection handling.
 * Client subscriptions.
 * Continuous communication with multiple clients.
-
-### Packet Integrity
-
-Implemented validation for:
-
-* Valid packets.
-* Tampered packets.
-* Invalid packet magic.
-* Truncated packets.
-* Invalid packet lengths.
-
-Example test results:
-
-```text
-PASS: Valid packet accepted.
-PASS: Tampered packet rejected by CRC-32C.
-
-PASS: Bad Magic rejected - Invalid DTComm packet.
-PASS: Truncated packet rejected - Invalid DTComm packet length.
-PASS: Unexpected trailing data rejected - Invalid DTComm packet length.
 ```
 
 ### Security
