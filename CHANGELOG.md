@@ -3,9 +3,18 @@
 
 # OPC UA Integration
 
-Added OPC UA communication capability to DTComm.
+Added OPC UA communication capability to DTComm. 
 
-## OPC UA Server
+## OPC UA Server (DTComm as a server)
+- Test with console. No GUI yet.
+- Using UA Expert (A product from Unified Automation)  to connect.
+- Certificates authorization between server and client with DTComm as server and UA Expert as client
+- All certificates loaded are for testing only
+
+1) Password before connect
+<img width="1902" height="981" alt="dtcomm_opcua1" src="https://github.com/user-attachments/assets/f64486bc-1808-4fff-bc27-947da8619546" />
+
+
 
 
 
