@@ -176,8 +176,6 @@ Testing demonstrated:
 
 ### Packet Integrity
 
-Added **CRC-32C** packet integrity verification.
-
 Implemented validation for:
 
 * Valid packets.
@@ -185,7 +183,6 @@ Implemented validation for:
 * Invalid packet magic.
 * Truncated packets.
 * Invalid packet lengths.
-* Unexpected trailing data.
 
 Example test results:
 
@@ -212,12 +209,4 @@ Added:
 * Permissions.
 * Authorization enforcement.
 
-Authentication and authorization behaviour has been tested.
-
-The security architecture is being developed with reference to **IEC 62443 industrial cybersecurity principles**.
-
-DTComm does **not** claim IEC 62443 compliance or certification.
-
 ---
-
-urrently a development and demonstration project. The GitHub repository is provided as a public engineering project showcase and does not contain the DTComm source code.
