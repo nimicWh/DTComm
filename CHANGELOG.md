@@ -1,6 +1,81 @@
 # Changelog
+## [v0.2.0] - 27/8/26
 
-## [v0.1.0] - 2026-08-27
+### OPC UA Connection
+
+The OPC UA implementation has successfully demonstrated:
+
+1. Endpoint discovery.
+2. Certificate loading.
+3. Certificate exchange.
+4. Secure channel establishment.
+5. User authentication.
+6. Session creation.
+7. Monitored item creation.
+8. Subscription creation.
+
+---
+
+# In Progress
+
+## OPC UA Live Telemetry
+
+The OPC UA development to complete live data-change path from the simulated equipment through the OPC UA server to the client.
+
+Target path:
+
+```text
+Simulated Chiller
+       ↓
+DTComm Runtime
+       ↓
+OPC UA Server Variable
+       ↓
+DataValue Update
+       ↓
+OPC UA DataChange Notification
+       ↓
+OPC UA Subscription
+       ↓
+DTComm OPC UA Client
+       ↓
+Live Value
+```
+
+The OPC UA connection, security, session and subscription layers are operational.
+
+The **server-side variable update and end-to-end live data-change notification path remains under verification**.
+
+---
+
+# Architecture Direction
+
+DTComm is evolving toward a layered industrial communication architecture:
+
+```text
+┌──────────────────────────────────────┐
+│     Digital Twin / Applications      │
+├──────────────────────────────────────┤
+│   OPC UA / MQTT / Modbus Interfaces  │
+├──────────────────────────────────────┤
+│        DTComm Telemetry Layer        │
+├──────────────────────────────────────┤
+│    Session / Security Management     │
+├──────────────────────────────────────┤
+│       DTComm Packet Protocol         │
+├──────────────────────────────────────┤
+│            TCP Transport             │
+└──────────────────────────────────────┘
+```
+
+The objective is to provide a communication foundation between:
+
+* Industrial equipment.
+* Equipment simulation.
+* Real-time telemetry.
+
+
+## [v0.1.0] - 12/08/2026
 
 ### Overview
 
@@ -8,7 +83,7 @@ DTComm progressed from its core communication foundation into an industrial comm
 
 The current development platform uses a **simulated industrial chiller** as the equipment model for demonstrating communication and monitoring capabilities.
 
----
+Testing done with local console.
 
 ## Added
 
@@ -127,48 +202,23 @@ Added OPC UA communication capability to DTComm.
 
 ## OPC UA Server
 
-Implemented:
 
-* DTComm OPC UA server.
-* OPC UA application instance.
-* Application certificate handling.
-* PKI certificate store.
-* DTComm runtime data source integration.
-* OPC UA equipment nodes.
-* OPC UA monitored items.
-* OPC UA subscriptions.
 
-Example node:
 
-```text
-ns=2;s=Chiller01.Temperature
-```
 
-## OPC UA Client
+
+
+## OPC UA Client 
 
 Implemented a DTComm OPC UA client test application.
 
-The client currently supports:
 
-* Endpoint discovery.
-* Application certificate loading.
-* Certificate exchange.
-* Secure channel establishment.
-* Username/password authentication.
-* OPC UA session creation.
-* Monitored item creation.
-* OPC UA subscription creation.
 
-Example successful test state:
 
-```text
-CONNECTION SUCCESSFUL
 
-OPC UA SUBSCRIPTION STARTED
-Node : ns=2;s=Chiller01.Temperature
-```
 
----
+
+
 
 # Verified
 
@@ -192,78 +242,6 @@ CRC-32C integrity protection has been tested successfully against valid and deli
 
 The authentication and authorization framework has been tested, including access control and account security behaviour.
 
-### OPC UA Connection
-
-The OPC UA implementation has successfully demonstrated:
-
-1. Endpoint discovery.
-2. Certificate loading.
-3. Certificate exchange.
-4. Secure channel establishment.
-5. User authentication.
-6. Session creation.
-7. Monitored item creation.
-8. Subscription creation.
-
----
-
-# In Progress
-
-## OPC UA Live Telemetry
-
-The remaining OPC UA development work is to verify the complete live data-change path from the simulated equipment through the OPC UA server to the client.
-
-Target path:
-
-```text
-Simulated Chiller
-       ↓
-DTComm Runtime
-       ↓
-OPC UA Server Variable
-       ↓
-DataValue Update
-       ↓
-OPC UA DataChange Notification
-       ↓
-OPC UA Subscription
-       ↓
-DTComm OPC UA Client
-       ↓
-Live Value
-```
-
-The OPC UA connection, security, session and subscription layers are operational.
-
-The **server-side variable update and end-to-end live data-change notification path remains under verification**.
-
----
-
-# Architecture Direction
-
-DTComm is evolving toward a layered industrial communication architecture:
-
-```text
-┌──────────────────────────────────────┐
-│     Digital Twin / Applications      │
-├──────────────────────────────────────┤
-│   OPC UA / MQTT / Modbus Interfaces  │
-├──────────────────────────────────────┤
-│        DTComm Telemetry Layer        │
-├──────────────────────────────────────┤
-│    Session / Security Management     │
-├──────────────────────────────────────┤
-│       DTComm Packet Protocol         │
-├──────────────────────────────────────┤
-│            TCP Transport             │
-└──────────────────────────────────────┘
-```
-
-The objective is to provide a communication foundation between:
-
-* Industrial equipment.
-* Equipment simulation.
-* Real-time telemetry.
 * Monitoring applications.
 * Engineering applications.
 * Digital twin systems.
