@@ -197,35 +197,6 @@ Provide a lightweight communication mechanism for engineering software and equip
 
 ---
 
-## Current Demonstration
-
-The current development system consists of:
-
-**DTComm Server**
-
-↓
-
-**Simulated Industrial Chiller**
-
-↓
-
-**Live Sensor Data** (simulated)
-
-↓
-
-**DTComm Client**
-
-The demonstration is intentionally built around an industrial equipment scenario rather than a generic messaging example.
-
----
-
----
-## Why DTComm?
-
-The DTComm is to be designed for the project, Physic based digital twin. IT explores a lightweight approach to the environment of communication.
-
----
-
 ## Industrial Cybersecurity
 
 The long-term security direction of DTComm is intended to align with the **IEC 62443 family of standards**, which provides a framework for cybersecurity in industrial automation and control systems.
