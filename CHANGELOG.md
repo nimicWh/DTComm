@@ -60,7 +60,6 @@ The authentication and authorization framework has been tested, including access
 * Digital twin systems.
 
 
-DTComm is c
 
 ### OPC UA Connection
 
