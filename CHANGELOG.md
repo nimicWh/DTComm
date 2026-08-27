@@ -1,92 +1,273 @@
-Changelog
+# Changelog
 
-All notable changes to DTComm are documented in this file.
+## [v0.1.0] - 2026-08-27
 
-DTComm is currently an active development and demonstration project. Version entries describe development progress, new capabilities, testing activities, and improvements.
+### Overview
 
-v0.8.0 - Multi-Client Communication Demonstration
-Added
-Multi-client connection support
-Individual client registration and connection tracking
-Equipment data subscription mechanism
-Continuous telemetry updates
-Simulated industrial chiller data generation
-Live monitoring demonstration
-Improved
-Communication stability under continuous data traffic
-Device connection management
-Data point monitoring workflow
-Validation
+DTComm progressed from its core communication foundation into an industrial communication platform supporting  multi-client communication and OPC UA integration**.
 
-Tested using:
+The current development platform uses a **simulated industrial chiller** as the equipment model for demonstrating communication and monitoring capabilities.
 
-Component	Purpose
-DTComm Server	Industrial communication platform
-Simulated Industrial Chiller	Equipment data generation
-DTComm Client	Equipment monitoring application
-Demonstration
+---
 
-The following demonstration shows:
+## Added
 
-Multiple clients connecting to DTComm server
-Individual connection acknowledgement
-Data subscription process
-Live equipment value updates
-v0.7.0 - Equipment Simulation Framework
-Added
-Industrial chiller simulation model
-Simulated sensor data generation
-Real-time operating value updates
-Basic equipment communication workflow
-Demonstration
+### DTComm Core Communication
 
-The system workflow:
+* TCP transport layer.
+* DTComm frame protocol.
+* Packet serialization and deserialization.
+* Packet type definitions.
+* `CONNECT` handshake.
+* Session management.
+* Ping/Pong heartbeat.
+* Connection management.
+* Subscription mechanism.
+* Sensor data packet support.
 
-Simulated Industrial Chiller
-            ↓
-       DTComm Server
-            ↓
-       DTComm Client
-            ↓
-    Live Monitoring Data
+### Real-Time Telemetry
 
-v0.6.0 - Initial Communication Framework
-Added
-Initial DTComm server/client architecture
-Basic communication channel
-Equipment data exchange concept
-Development environment setup
-Upcoming Development
-Planned
- Secure communication transmission
- Authentication and authorization mechanism
- MQTT communication interface
- OPC UA communication interface
- Modbus communication interface
- External application socket/API interface
- Expanded equipment simulation models
- Industrial cybersecurity enhancements aligned with IEC 62443 principles
-Third-Party Software Notice
+Implemented the initial telemetry architecture for continuous equipment data:
 
-DTComm may use third-party software tools for testing and validation purposes.
+```text
+Simulated Chiller
+       ↓
+ChillerDevice
+       ↓
+Runtime Scan
+       ↓
+TagCache
+       ↓
+SubscriptionManager
+       ↓
+SensorData Packet
+       ↓
+DTComm Client
+       ↓
+Live Monitoring
+```
 
-Examples:
+The runtime architecture uses a **100 ms scan interval** as the current development target.
 
-UAExpert for OPC UA client testing
-External monitoring applications for communication validation
+### Equipment Simulation
 
-Third-party software remains the property of its respective owners. Use of external tools in demonstrations does not imply endorsement, partnership, or affiliation.
+Added a simulated industrial chiller as the primary demonstration equipment.
 
-Versioning
+The simulation provides continuously changing equipment and sensor values for communication and monitoring tests.
 
-DTComm versions follow development milestones rather than production release guarantees.
+Current demonstration data includes:
 
-Example:
+* Chilled-water supply temperature.
+* Device status.
+* Sensor values.
+* Equipment operating data.
 
-Major.Minor.Patch
+### Multi-Client Communication
 
-0.8.0
-│ │ │
-│ │ └── Fixes and minor improvements
-│ └──── Feature additions
-└────── Major development milestone
+Added support for multiple simultaneous DTComm client connections.
+
+The server can independently register and manage multiple client sessions.
+
+Testing demonstrated:
+
+* Multiple client connections.
+* Independent client startup timing.
+* Individual client connection handling.
+* Client subscriptions.
+* Continuous communication with multiple clients.
+
+### Packet Integrity
+
+Added **CRC-32C** packet integrity verification.
+
+Implemented validation for:
+
+* Valid packets.
+* Tampered packets.
+* Invalid packet magic.
+* Truncated packets.
+* Invalid packet lengths.
+* Unexpected trailing data.
+
+Example test results:
+
+```text
+PASS: Valid packet accepted.
+PASS: Tampered packet rejected by CRC-32C.
+
+PASS: Bad Magic rejected - Invalid DTComm packet.
+PASS: Truncated packet rejected - Invalid DTComm packet length.
+PASS: Unexpected trailing data rejected - Invalid DTComm packet length.
+```
+
+### Security
+
+Implemented the initial DTComm authentication and authorization framework.
+
+Added:
+
+* Username/password authentication.
+* Password hashing.
+* Account management.
+* Account lockout.
+* User roles.
+* Permissions.
+* Authorization enforcement.
+
+Authentication and authorization behaviour has been tested.
+
+The security architecture is being developed with reference to **IEC 62443 industrial cybersecurity principles**.
+
+DTComm does **not** claim IEC 62443 compliance or certification.
+
+---
+
+# OPC UA Integration
+
+Added OPC UA communication capability to DTComm.
+
+## OPC UA Server
+
+Implemented:
+
+* DTComm OPC UA server.
+* OPC UA application instance.
+* Application certificate handling.
+* PKI certificate store.
+* DTComm runtime data source integration.
+* OPC UA equipment nodes.
+* OPC UA monitored items.
+* OPC UA subscriptions.
+
+Example node:
+
+```text
+ns=2;s=Chiller01.Temperature
+```
+
+## OPC UA Client
+
+Implemented a DTComm OPC UA client test application.
+
+The client currently supports:
+
+* Endpoint discovery.
+* Application certificate loading.
+* Certificate exchange.
+* Secure channel establishment.
+* Username/password authentication.
+* OPC UA session creation.
+* Monitored item creation.
+* OPC UA subscription creation.
+
+Example successful test state:
+
+```text
+CONNECTION SUCCESSFUL
+
+OPC UA SUBSCRIPTION STARTED
+Node : ns=2;s=Chiller01.Temperature
+```
+
+---
+
+# Verified
+
+### DTComm Communication
+
+The following communication functions have been successfully tested:
+
+* TCP connection.
+* Client/server communication.
+* Session establishment.
+* Heartbeat.
+* Subscription mechanism.
+* Continuous telemetry architecture.
+* Multiple client connections.
+
+### Packet Integrity
+
+CRC-32C integrity protection has been tested successfully against valid and deliberately invalid packet data.
+
+### Security
+
+The authentication and authorization framework has been tested, including access control and account security behaviour.
+
+### OPC UA Connection
+
+The OPC UA implementation has successfully demonstrated:
+
+1. Endpoint discovery.
+2. Certificate loading.
+3. Certificate exchange.
+4. Secure channel establishment.
+5. User authentication.
+6. Session creation.
+7. Monitored item creation.
+8. Subscription creation.
+
+---
+
+# In Progress
+
+## OPC UA Live Telemetry
+
+The remaining OPC UA development work is to verify the complete live data-change path from the simulated equipment through the OPC UA server to the client.
+
+Target path:
+
+```text
+Simulated Chiller
+       ↓
+DTComm Runtime
+       ↓
+OPC UA Server Variable
+       ↓
+DataValue Update
+       ↓
+OPC UA DataChange Notification
+       ↓
+OPC UA Subscription
+       ↓
+DTComm OPC UA Client
+       ↓
+Live Value
+```
+
+The OPC UA connection, security, session and subscription layers are operational.
+
+The **server-side variable update and end-to-end live data-change notification path remains under verification**.
+
+---
+
+# Architecture Direction
+
+DTComm is evolving toward a layered industrial communication architecture:
+
+```text
+┌──────────────────────────────────────┐
+│     Digital Twin / Applications      │
+├──────────────────────────────────────┤
+│   OPC UA / MQTT / Modbus Interfaces  │
+├──────────────────────────────────────┤
+│        DTComm Telemetry Layer        │
+├──────────────────────────────────────┤
+│    Session / Security Management     │
+├──────────────────────────────────────┤
+│       DTComm Packet Protocol         │
+├──────────────────────────────────────┤
+│            TCP Transport             │
+└──────────────────────────────────────┘
+```
+
+The objective is to provide a communication foundation between:
+
+* Industrial equipment.
+* Equipment simulation.
+* Real-time telemetry.
+* Monitoring applications.
+* Engineering applications.
+* Digital twin systems.
+
+
+DTComm is currently a development and demonstration project. The GitHub repository is provided as a public engineering project showcase and does not contain the DTComm source code.
