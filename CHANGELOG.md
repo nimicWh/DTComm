@@ -47,7 +47,6 @@ DTComm Client
 Live Monitoring
 ```
 
-The runtime architecture uses a **100 ms scan interval** as the current development target.
 
 ### Equipment Simulation
 
