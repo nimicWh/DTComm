@@ -48,33 +48,6 @@ The **server-side variable update and end-to-end live data-change notification p
 
 ---
 
-# Architecture Direction
-
-DTComm is evolving toward a layered industrial communication architecture:
-
-```text
-┌──────────────────────────────────────┐
-│     Digital Twin / Applications      │
-├──────────────────────────────────────┤
-│   OPC UA / MQTT / Modbus Interfaces  │
-├──────────────────────────────────────┤
-│        DTComm Telemetry Layer        │
-├──────────────────────────────────────┤
-│    Session / Security Management     │
-├──────────────────────────────────────┤
-│       DTComm Packet Protocol         │
-├──────────────────────────────────────┤
-│            TCP Transport             │
-└──────────────────────────────────────┘
-```
-
-The objective is to provide a communication foundation between:
-
-* Industrial equipment.
-* Equipment simulation.
-* Real-time telemetry.
-
-
 ## [v0.1.0] - 12/08/2026
 
 ### Overview
