@@ -40,6 +40,12 @@ Added OPC UA communication capability to DTComm.
 - Certificates authorization between server and client.
 - All certificates loaded are for testing only
 - All data are simulated for testing now.
+- * Password and username hard coded into the programs.
+
+1)Client and server. Certifications authorization.
+<img width="1916" height="845" alt="dtcomm_opcua_clt_svr" src="https://github.com/user-attachments/assets/2c8658bb-b137-4630-86ca-747df2c8557c" />
+
+
 
 
 
