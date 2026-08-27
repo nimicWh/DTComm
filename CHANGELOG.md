@@ -50,9 +50,6 @@ The following communication functions have been successfully tested:
 * Continuous telemetry architecture.
 * Multiple client connections.
 
-### Packet Integrity
-
-CRC-32C integrity protection has been tested successfully against valid and deliberately invalid packet data.
 
 ### Security
 
