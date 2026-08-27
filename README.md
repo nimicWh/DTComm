@@ -19,6 +19,99 @@ The current development platform uses a **simulated industrial chiller** to demo
 
 ---
 
+## DTComm System Overview
+
+The current DTComm demonstration uses a simulated industrial chiller to represent equipment operating in an industrial environment.
+
+```text
+             ┌─────────────────────┐
+             │   Simulated Chiller │
+             │                     │
+             │  Live Equipment     │
+             │  Sensor Data        │
+             │  Operating Status   │
+             └──────────┬──────────┘
+                        │
+                        ▼
+             ┌─────────────────────┐
+             │       DTComm        │
+             │                     │
+             │ Communication Layer │
+             │ Security            │
+             │ Sessions            │
+             │ Telemetry           │
+             │ Subscriptions       │
+             └──────────┬──────────┘
+                        │
+              ┌─────────┴─────────┐
+              │                   │
+              ▼                   ▼
+       ┌─────────────┐     ┌─────────────┐
+       │   DTComm    │     │    OPC UA   │
+       │   Client    │     │  Interface  │
+       │             │     │             │
+       │ Monitoring  │     │ Industrial  │
+       │ Application │     │ Integration │
+       └──────┬──────┘     └─────────────┘
+              │
+              ▼
+       ┌─────────────┐
+       │    Live     │
+       │  Monitoring │
+       │             │
+       │ Equipment   │
+       │ Status      │
+       │ Sensor Data │
+       └─────────────┘
+```
+
+### Communication Flow
+
+**Industrial Equipment**
+
+The simulated chiller continuously generates equipment operating data.
+
+↓
+
+**DTComm**
+
+DTComm manages equipment communication, sessions, security, telemetry and data subscriptions.
+
+↓
+
+**Communication Interfaces**
+
+DTComm data can be exposed to applications through communication interfaces such as DTComm and OPC UA. MQTT and Modbus are part of the planned development direction.
+
+↓
+
+**Monitoring Application**
+
+The client receives equipment data and presents the information as a real-time monitoring view.
+
+### End-User Perspective
+
+The intended concept is straightforward:
+
+```text
+Equipment
+    ↓
+Equipment Data
+    ↓
+DTComm
+    ↓
+Communication
+    ↓
+Application
+    ↓
+Usable Information
+```
+
+DTComm is intended to provide the communication layer between industrial equipment and higher-level engineering or monitoring applications.
+
+The simulated chiller provides a controlled environment for demonstrating this architecture before integration with physical industrial equipment.
+
+
 ## What can DTComm do?
 
 DTComm to demonstrates:
