@@ -1,6 +1,57 @@
 # Changelog
 ## [v0.2.0] - 27/8/26
 
+# OPC UA Integration
+
+Added OPC UA communication capability to DTComm.
+
+## OPC UA Server
+
+
+
+
+
+
+
+## OPC UA Client 
+
+Implemented a DTComm OPC UA client test application.
+
+
+
+
+
+
+
+
+
+### DTComm Communication
+
+The following communication functions have been successfully tested:
+
+* TCP connection.
+* Client/server communication.
+* Session establishment.
+* Heartbeat.
+* Subscription mechanism.
+* Continuous telemetry architecture.
+* Multiple client connections.
+
+### Packet Integrity
+
+CRC-32C integrity protection has been tested successfully against valid and deliberately invalid packet data.
+
+### Security
+
+The authentication and authorization framework has been tested, including access control and account security behaviour.
+
+* Monitoring applications.
+* Engineering applications.
+* Digital twin systems.
+
+
+DTComm is c
+
 ### OPC UA Connection
 
 The OPC UA implementation has successfully demonstrated:
@@ -169,55 +220,4 @@ DTComm does **not** claim IEC 62443 compliance or certification.
 
 ---
 
-# OPC UA Integration
-
-Added OPC UA communication capability to DTComm.
-
-## OPC UA Server
-
-
-
-
-
-
-
-## OPC UA Client 
-
-Implemented a DTComm OPC UA client test application.
-
-
-
-
-
-
-
-
-
-# Verified
-
-### DTComm Communication
-
-The following communication functions have been successfully tested:
-
-* TCP connection.
-* Client/server communication.
-* Session establishment.
-* Heartbeat.
-* Subscription mechanism.
-* Continuous telemetry architecture.
-* Multiple client connections.
-
-### Packet Integrity
-
-CRC-32C integrity protection has been tested successfully against valid and deliberately invalid packet data.
-
-### Security
-
-The authentication and authorization framework has been tested, including access control and account security behaviour.
-
-* Monitoring applications.
-* Engineering applications.
-* Digital twin systems.
-
-
-DTComm is currently a development and demonstration project. The GitHub repository is provided as a public engineering project showcase and does not contain the DTComm source code.
+urrently a development and demonstration project. The GitHub repository is provided as a public engineering project showcase and does not contain the DTComm source code.
