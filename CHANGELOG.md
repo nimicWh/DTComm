@@ -11,7 +11,7 @@ Added OPC UA communication capability to DTComm.
 - Certificates authorization between server and client with DTComm as server and UA Expert as client
 - All certificates loaded are for testing only
 
-1) Password before connect. 
+1) Password before connect. Authorize the communication.
 <img width="1902" height="981" alt="dtcomm_opcua1" src="https://github.com/user-attachments/assets/f64486bc-1808-4fff-bc27-947da8619546" />
 
 2) Authorization to connect to DTComm with certificates verification between server and client. User authorization accepted.
