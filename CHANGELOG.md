@@ -91,38 +91,6 @@ The OPC UA implementation has successfully demonstrated:
 
 ---
 
-# In Progress
-
-## OPC UA Live Telemetry
-
-The OPC UA development to complete live data-change path from the simulated equipment through the OPC UA server to the client.
-
-Target path:
-
-```text
-Simulated Chiller
-       ↓
-DTComm Runtime
-       ↓
-OPC UA Server Variable
-       ↓
-DataValue Update
-       ↓
-OPC UA DataChange Notification
-       ↓
-OPC UA Subscription
-       ↓
-DTComm OPC UA Client
-       ↓
-Live Value
-```
-
-The OPC UA connection, security, session and subscription layers are operational.
-
-The **server-side variable update and end-to-end live data-change notification path remains under verification**.
-
----
-
 ## [v0.1.0] - 12/08/2026
 
 ### Overview
@@ -139,14 +107,12 @@ Testing done with local console.
 
 * TCP transport layer.
 * DTComm frame protocol.
-* Packet serialization and deserialization.
-* Packet type definitions.
 * `CONNECT` handshake.
 * Session management.
 * Ping/Pong heartbeat.
 * Connection management.
 * Subscription mechanism.
-* Sensor data packet support.
+* Sensor data packet.
 
 ### Real-Time Telemetry
 
@@ -226,9 +192,8 @@ Implemented the initial DTComm authentication and authorization framework.
 Added:
 
 * Username/password authentication.
-* Password hashing.
-* Account management.
-* Account lockout.
+* Password.
+* Account access.
 * User roles.
 * Permissions.
 * Authorization enforcement.
