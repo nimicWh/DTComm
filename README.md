@@ -219,23 +219,7 @@ The demonstration is intentionally built around an industrial equipment scenario
 
 ---
 
-## Performance Goals
-
-DTComm is being developed with the following targets:
-
-| Objective             |           Target |
-| --------------------- | ---------------: |
-| Communication latency |         < 100 ms |
-| Runtime scan interval |           100 ms |
-| Sensor scalability    | 100+ data points |
-| Continuous telemetry  |        Supported |
-| Equipment simulation  |        Supported |
-| Client monitoring     |        Supported |
-
-These are development targets and test objectives, not certification claims.
-
 ---
-
 ## Why DTComm?
 
 The DTComm is to be designed for the project, Physic based digital twin. IT explores a lightweight approach to the environment of communication.
