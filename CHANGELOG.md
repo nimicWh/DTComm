@@ -20,6 +20,10 @@ Added OPC UA communication capability to DTComm.
 3) Lets subscribe and send some data...
 <img width="1899" height="993" alt="Screenshot 2026-08-27 135744" src="https://github.com/user-attachments/assets/f80d5d50-6887-4b10-82e7-856f132ffc2e" />
 
+3) Some data.
+<img width="1622" height="974" alt="dtcomm_ua_nodes_values" src="https://github.com/user-attachments/assets/ad6885fc-31a0-43f6-a7df-39706eacc06c" />
+
+
 
 
 
