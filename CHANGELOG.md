@@ -49,10 +49,8 @@ The following communication functions have been successfully tested:
 * TCP connection.
 * Client/server communication.
 * Session establishment.
-* Heartbeat.
 * Subscription mechanism.
-* Continuous telemetry architecture.
-* Multiple client connections.
+
 
 
 ### Security
