@@ -112,7 +112,7 @@ DTComm is intended to provide the communication layer between industrial equipme
 The simulated chiller provides a controlled environment for demonstrating this architecture before integration with physical industrial equipment.
 
 
-## What can DTComm do?
+## What DTComm do?
 
 DTComm to demonstrates:
 
