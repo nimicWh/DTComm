@@ -1,0 +1,11 @@
+## [v0.2.1] - 31/8/26
+
+# Blockchain Integration
+
+Added blockchain capability to DTComm. 
+- Tempered free data
+- Data flow nodes. 
+- Consensus at nodes before commit to DB. Persisted data storage locally currently.
+- Hash validation
+- Local consensus between nodes running locally.
+- Proof of concept.
