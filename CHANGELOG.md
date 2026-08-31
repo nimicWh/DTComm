@@ -1,4 +1,11 @@
 # Changelog
+## [v0.2.2] - 31/8/26
+# Simple blockchain for tempered free data. 
+- Nodes created locally.
+- DB for local data persistence. No distributed currently
+- Local consensus and commit to DB from simulated Chiller data.
+- Hash validation. 
+
 ## [v0.2.0] - 27/8/26
 
 # OPC UA Integration
