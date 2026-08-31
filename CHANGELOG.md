@@ -1,12 +1,16 @@
 # Changelog
-## [v0.2.2] - 31/8/26
+## [v0.2.2] - 31/8/26 (see respective MD file for details)
 # Simple blockchain for tempered free data. 
 - Nodes created locally.
 - DB for local data persistence. No distributed currently
 - Local consensus and commit to DB from simulated Chiller data.
-- Hash validation. 
+- Hash validation.
 
-## [v0.2.0] - 27/8/26
+## [v0.2.1] - 27/8/26 (See respective Md file)
+- Result for connect to PLCSIM Adv (Siemens)
+- No secured
+  
+## [v0.2.0] - 27/8/26  (See respective Md file)
 
 # OPC UA Integration
 
@@ -29,16 +33,6 @@ Added OPC UA communication capability to DTComm.
 1)Client and server. Certifications authorization.
 <img width="1916" height="845" alt="dtcomm_opcua_clt_svr" src="https://github.com/user-attachments/assets/2c8658bb-b137-4630-86ca-747df2c8557c" />
 
-
-
-
-
-
-
-
-
-
-
 ### DTComm Communication
 
 The following communication functions have been successfully tested:
@@ -47,9 +41,6 @@ The following communication functions have been successfully tested:
 * Client/server communication.
 * Session establishment.
 * Subscription mechanism.
-
-
-
 ### Security
 
 The authentication and authorization framework has been tested, including access control and account security behaviour.
@@ -57,8 +48,6 @@ The authentication and authorization framework has been tested, including access
 * Monitoring applications.
 * Engineering applications.
 * Digital twin systems.
-
-
 
 ### OPC UA Connection
 
