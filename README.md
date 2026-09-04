@@ -43,16 +43,16 @@ The current DTComm demonstration uses a simulated industrial chiller to represen
              │ Subscriptions       │
              └──────────┬──────────┘
                         │
-              ┌─────────┴─────────┐
-              │                   │
-              ▼                   ▼
-       ┌─────────────┐     ┌─────────────┐
-       │   DTComm    │     │    OPC UA   │
-       │   Client    │     │  Interface  │
-       │             │     │             │
-       │ Monitoring  │     │ Industrial  │
-       │ Application │     │ Integration │
-       └──────┬──────┘     └─────────────┘
+              ┌─────────┴──────────────────────────────┐
+              │                   │                    │
+              ▼                   ▼                    ▼
+       ┌─────────────┐     ┌─────────────┐      ┌─────────────┐
+       │   DTComm    │     │    OPC UA   │      │ Blockchain  │
+       │   Client    │     │  Interface  │      │  Interface  │
+       │             │     │             │      │  Persisted  │
+       │ Monitoring  │     │ Industrial  │      │  Storage    │
+       │ Application │     │ Integration │      │             │
+       └──────┬──────┘     └─────────────┘      └─────────────┘
               │
               ▼
        ┌─────────────┐
