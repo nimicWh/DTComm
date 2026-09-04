@@ -1,4 +1,12 @@
 # Changelog
+## [v0.2.3] - 31/8/26 (see respective MD file for details)
+# Simple blockchain adapter for tempered free data. 
+- Data to blockchain to nodes.
+- Data persisted in nodes. No distributed currently
+- Local consensus and commit to DB from simulated Chiller data.
+- Hash validation.
+- PBFT consensus.
+
 ## [v0.2.2] - 31/8/26 (see respective MD file for details)
 # Simple blockchain for tempered free data. 
 - Nodes created locally.
