@@ -16,7 +16,7 @@ From the beginning of the project, DTComm with the intention of evolving toward 
 
 The current development platform uses a **simulated industrial chiller** to demonstrate live equipment communication and monitoring.
 
-Note: All information sources, coding and findings and researches from internet. They contributes to the build up of this project.
+Note: All information sources, coding and findings are researches from internet. They contributes to the build up of this project.
 
 
 ---
